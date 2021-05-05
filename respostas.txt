@@ -1,0 +1,15 @@
+Responda sucintamente os itens a seguir em um .txt levando as perguntas e as respostas para o controle de versão da maneira que julgar mais apropriado: 
+1. A solução deve ser disponibilizada em Cloud ou On-premise? 
+R: Dependendo da quantidade de usuários simultâneos e onde eles estão geograficamente uma solução on-premise poderia ser a mais aplicável, em um caso onde todos os usuários estivessem em Manaus e a aplicação não tenha muitos usuários utilizando o sistema ao mesmo tempo. Contudo, como a escalabilidade é um requisito apresentado neste escopo a solução mais apropriada seria rodar a aplicação em nuvem, onde a infraestrutura (servidores, load balancers, réplicas de banco de dados, espaço em disco, largura de banda, etc…) pode, automaticamente, escalar ou diminuir, conforme a demanda dos usuários.
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa solução, responda qual ferramenta acreditas ser apropriada para o controle de tarefas da equipe, a ferramenta é ágil? 
+R: Hoje existem várias ferramentas para gerenciamento de projetos (Jira, Azure DevOps, entre outras) e acredito que a ferramenta mais apropriada é aquela que a equipe tem mais afinidade de usar, qualquer uma das ferramentas citadas anteriormente são ferramentas padrões de mercado para gerenciamento de projetos de software ágil, pois todas possuem integração com git, quadros kanban, alguma feature para criar backlogs, dashboards para acompanhamento da tarefas/entregas da equipe através de gráficos burndown, value stream, Team Lead Time, entre outros. Dependendo do tipo de informação sobre o desempenho que a gerência/diretoria da equipe necessita, até uma ferramenta mais simples como o Trello pode ser a mais apropriada para a equipe.
+
+3. Você se sente capaz de liderar esta equipe? Por quê?
+R: Me sinto capaz por já ter liderado tecnicamente uma equipe de desenvolvedores antes, como analista de sistema/PO, além disso me sinto totalmente à vontade para tomar decisões arquiteturais sozinho ou em equipe.
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria? 
+R: Aplicaria testes unitários, teste funcionais, uma pipeline de build automático, conversaria com o grupo pra seguirmos certos padrões como SOLID, TDD. Além disso, usaria a prototipagem para validar as principais features do sistema tanto seus requisitos como a sua UI e UX.
+
+5. Acha válido esse desafio para o processo que está participando?
+R: É bastante interessante esse desafio pelo o fato de não apenas exigir um software pronto, mas nos faz ir além e pensar na sua arquitetura e a melhor forma de desenvolvê-la
