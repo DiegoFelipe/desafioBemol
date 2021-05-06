@@ -17,6 +17,6 @@ $router->get('/', function () use ($router) {
     return "$router->app->version()";
 });
 
-$router->post("/user", function () {
-    return "oi";
-});
+// $router->post("/user", function () {
+//     return "oi";
+// });
