@@ -14,5 +14,9 @@
 */
 
 $router->get('/', function () use ($router) {
-    return "teste";
+    return "$router->app->version()";
 });
+
+$router->post("/user", function () {
+    return "oi";
+})
