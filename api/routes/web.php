@@ -19,4 +19,4 @@ $router->get('/', function () use ($router) {
 
 $router->post("/user", function () {
     return "oi";
-})
+});
