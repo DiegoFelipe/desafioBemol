@@ -86,12 +86,31 @@ server {
 
 5 - Editar o arquivo /etc/hosts da máquina, adicionar esta linha:
 
+```
 127.0.0.1 bemol.digital
+```
 
 6 - Clonar este repositório no mesmo nível da pasta do laradock:
 
 ```sh
 git clone https://github.com/DiegoFelipe/desafioBemol.git
+```
+
+7 - Entrar na pasta _desafioBemol_ e executar o comando:
+
+```
+cp .env.example .env
+```
+
+8 - Editar as configurações de conexão com o banco de dados no arquivo .env do seguinte modo:
+
+```
+DB_CONNECTION=postgres
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=default
+DB_USERNAME=default
+DB_PASSWORD=secret
 ```
 
 9 - Ainda dentro da pasta do laradock, executar o comando:
