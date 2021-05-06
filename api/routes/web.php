@@ -12,11 +12,10 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
+use App\Http\Controllers\UserController;
 
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->post("/user", function () {
-    return "oi";
-});
+Route::resource('user', UserController::class);
