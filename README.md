@@ -135,8 +135,10 @@ sudo docker-compose exec workspace bash
 cd api
 ```
 
-12 - Executar o composer:
+12 - Executar os comandos:
 
 ```sh
 composer install
+php artisan migrate
+cp resources/css/app.css public/css
 ```

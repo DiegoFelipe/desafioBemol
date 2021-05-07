@@ -22,7 +22,10 @@ class User extends Authenticatable
         'password',
         'telefone',
         'cep',
-        'endereco',
+        'rua',
+        'bairro',
+        'cidade',
+        'uf',
         'numero',
     ];
 

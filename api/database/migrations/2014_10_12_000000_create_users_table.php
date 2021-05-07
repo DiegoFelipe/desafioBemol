@@ -20,7 +20,10 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('telefone');
             $table->string('cep');
-            $table->string('endereco');
+            $table->string('rua');
+            $table->string('bairro');
+            $table->string('cidade');
+            $table->string('uf');
             $table->string('numero');
             $table->rememberToken();
             $table->timestamps();
