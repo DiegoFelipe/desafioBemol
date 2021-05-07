@@ -7,6 +7,10 @@
 - Docker ([Laradock](https://laradock.io/))
 - Nginx (WEB Server)
 
+## Requisitos
+
+- PHP na versão 7.3+
+
 ## Setup
 
 ### Instalar o laradock
@@ -50,7 +54,7 @@ server {
     # ssl_certificate_key /etc/nginx/ssl/default.key;
 
     server_name bemol.digital;
-    root /var/www/desafioBemol/api/public;
+    root /var/www/api/public;
     index index.php index.html index.htm;
 
     location / {
@@ -105,7 +109,7 @@ cp .env.example .env
 8 - Editar as configurações de conexão com o banco de dados no arquivo .env do seguinte modo:
 
 ```
-DB_CONNECTION=postgres
+DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
 DB_PORT=5432
 DB_DATABASE=default
@@ -113,8 +117,26 @@ DB_USERNAME=default
 DB_PASSWORD=secret
 ```
 
-9 - Ainda dentro da pasta do laradock, executar o comando:
+9 - Dentro da pasta do laradock, executar o comando:
 
 ```sh
 sudo docker-compose up -d pgadmin postgres nginx
+```
+
+10 - Entrar no container workspace:
+
+```sh
+sudo docker-compose exec workspace bash
+```
+
+11 - Entrar na pasta api:
+
+```sh
+cd api
+```
+
+12 - Executar o composer:
+
+```sh
+composer install
 ```
