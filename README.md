@@ -142,3 +142,7 @@ composer install
 php artisan migrate
 cp resources/css/app.css public/css
 ```
+
+13 - Acessar a aplicação pelo browser:
+
+http://bemol.digital
