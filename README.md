@@ -27,13 +27,19 @@ git clone https://github.com/Laradock/laradock.git
 cp .env.example .env
 ```
 
-3 - Entrar na pasta nginx que está dentro de laradock e depois entrar na pasta sites e executar o comando:
+3 - Ainda na pasta do laradock editar o aquivo .env:
+
+```
+APP_CODE_PATH_HOST=../desafioBemol
+```
+
+4 - Entrar na pasta nginx que está dentro de laradock e depois entrar na pasta sites e executar o comando:
 
 ```sh
 cp laravel.conf.example bemol.conf
 ```
 
-4 - Editar o arquivo bemol.conf como a seguir:
+5 - Editar o arquivo bemol.conf como a seguir:
 
 ```
 #server {
@@ -88,54 +94,54 @@ server {
 
 ```
 
-5 - Editar o arquivo /etc/hosts da máquina, adicionar esta linha:
+6 - Editar o arquivo /etc/hosts da máquina, adicionar esta linha:
 
 ```
 127.0.0.1 bemol.digital
 ```
 
-6 - Clonar este repositório no mesmo nível da pasta do laradock:
+7 - Clonar este repositório no mesmo nível da pasta do laradock:
 
 ```sh
 git clone https://github.com/DiegoFelipe/desafioBemol.git
 ```
 
-7 - Entrar na pasta _desafioBemol_ e executar o comando:
+8 - Entrar na pasta _desafioBemol_ e executar o comando:
 
 ```
 cp .env.example .env
 ```
 
-8 - Editar as configurações de conexão com o banco de dados no arquivo .env do seguinte modo:
+9 - Editar as configurações de conexão com o banco de dados no arquivo .env do seguinte modo:
 
 ```
 DB_CONNECTION=pgsql
-DB_HOST=127.0.0.1
+DB_HOST=postgres
 DB_PORT=5432
 DB_DATABASE=default
 DB_USERNAME=default
 DB_PASSWORD=secret
 ```
 
-9 - Dentro da pasta do laradock, executar o comando:
+10 - Dentro da pasta do laradock, executar o comando:
 
 ```sh
 sudo docker-compose up -d pgadmin postgres nginx
 ```
 
-10 - Entrar no container workspace:
+11 - Entrar no container workspace:
 
 ```sh
 sudo docker-compose exec workspace bash
 ```
 
-11 - Entrar na pasta api:
+12 - Entrar na pasta api:
 
 ```sh
 cd api
 ```
 
-12 - Executar os comandos:
+13 - Executar os comandos:
 
 ```sh
 composer install
@@ -143,6 +149,6 @@ php artisan migrate
 cp resources/css/app.css public/css
 ```
 
-13 - Acessar a aplicação pelo browser:
+14 - Acessar a aplicação pelo browser:
 
 http://bemol.digital
